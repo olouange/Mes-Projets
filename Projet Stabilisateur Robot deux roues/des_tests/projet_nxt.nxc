@@ -1,0 +1,139 @@
+/*#define GYRO_PORT S1
+#define MOTOR_LEFT OUT_A
+#define MOTOR_RIGHT OUT_B
+#define ENCODER_LEFT MOTOR_LEFT
+#define ENCODER_RIGHT MOTOR_RIGHT
+
+// Constantes PID
+float Kp = 2.0;          // Gain proportionnel
+float Ki = 0.0;          // Gain intégral
+float Kd = 0.5;          // Gain dérivé
+float Kp_wheel = 0.1;    // Gain pour la vitesse des roues (à ajuster)
+
+// Variables de contrôle PID
+float angle_cible = 0.0;         // Angle cible pour l'équilibrage
+float erreur = 0.0;              // Erreur actuelle (inclinaison)
+float erreur_prev = 0.0;         // Erreur précédente (pour calcul du dérivé)
+float integrale = 0.0;           // Somme des erreurs pour la partie intégrale
+float sortie = 0.0;              // Sortie du PID (valeur calculée pour contrôler les moteurs)
+
+// Variables pour la vitesse des roues
+long encoder_left_prev = 0;  // Position précédente du moteur gauche
+long encoder_right_prev = 0; // Position précédente du moteur droit
+float vitesse_wheel = 0.0;   // Vitesse des roues combinée
+
+// Échelle pour l'intégrale
+float scale = 0.25;
+
+task main()
+{
+    SetSensorHTGyro(GYRO_PORT);  // Initialiser le capteur gyroscopique
+    ResetRotationCount(ENCODER_LEFT);  // Réinitialiser l'encodeur du moteur gauche
+    ResetRotationCount(ENCODER_RIGHT); // Réinitialiser l'encodeur du moteur droit
+    Wait(1000);                      // Attendre 1 seconde pour stabiliser le capteur
+
+    while (true)
+    {
+        // Lecture des valeurs du gyroscope et des encodeurs
+        float angle_actuel = SensorHTGyro(GYRO_PORT);  // Lire l'angle actuel du gyroscope
+        long encoder_left = MotorRotationCount(ENCODER_LEFT);  // Lire la position actuelle du moteur gauche
+        long encoder_right = MotorRotationCount(ENCODER_RIGHT); // Lire la position actuelle du moteur droit
+
+        // Calcul de la vitesse des roues
+        float vitesse_left = encoder_left - encoder_left_prev;
+        float vitesse_right = encoder_right - encoder_right_prev;
+        vitesse_wheel = (vitesse_left + vitesse_right) / 2.0;  // Moyenne des vitesses des deux roues
+
+        // Calcul de l'erreur
+        erreur = angle_cible - angle_actuel;
+        integrale += erreur * scale;  // Somme des erreurs pour la partie intégrale
+        float derivee = erreur - erreur_prev;  // Calcul de la dérivée
+
+        // Calcul de la sortie PID
+        sortie = (Kp * erreur) + (Ki * integrale) + (Kd * derivee) - (Kp_wheel * vitesse_wheel);
+
+        // Limiter la sortie à la plage [-100, 100]
+        if (sortie > 100)
+            sortie = 100;
+        else if (sortie < -100)
+            sortie = -100;
+
+        // Commande des moteurs
+        OnRev(MOTOR_LEFT, -sortie);
+        OnFwd(MOTOR_RIGHT, sortie);
+
+        // Mise à jour des variables pour le prochain cycle
+        erreur_prev = erreur; // Remplacer derniere_erreur par erreur_prev
+        encoder_left_prev = encoder_left;
+        encoder_right_prev = encoder_right;
+
+        Wait(5);  // Attendre 5 ms avant la prochaine itération
+    }
+}             */
+
+
+
+
+
+
+//NXTway-Gyro Segway balancing robot with Hitechnic gyro
+//Based on JanB 20.12.2008 (NXC Bricx 3.3)
+//modified by Techbricks.nl (Ted Sluis)
+//last update 18.09.2009 - add line 9: SetSensorHTGyro(Gyro_port) ;
+#define Gyro_port S3
+
+task main(){
+
+	SetSensorHTGyro(Gyro_port);
+
+ 	int ng,gn=0,nw=0,rp=0,rg,lrp=0,rwi=0,md;
+	int GyroBiasCount,Gyro_value,GyroBias=0, batt;
+	long timer1;
+	string message, messageA, messageB;
+
+	timer1 = CurrentTick();  // set timer1
+
+	// Calculate the Giro Bias for the Hitechnic Gyro sensor.
+	// by measuring the Gyro value many times in 3 secondes.
+	// Gyro Bias is avarage Gyro value.
+  	GyroBiasCount = 0;
+   	while (CurrentTick() < (3000+timer1)) {
+		// filter the sensor output
+      		Gyro_value = SensorRaw(S3);
+      		Wait(150);
+      		GyroBiasCount = GyroBiasCount + 1;
+ 		gn = gn + Gyro_value;
+ 		PlayTone(TONE_B7, 5);
+   	}
+	GyroBias = gn / GyroBiasCount;
+	gn=GyroBias;
+
+	// Measure the battery voltage.
+	batt=BatteryLevel();
+
+	// Display calculated GyroBias an battery voltage on the NXT screen;
+	message = "Gbias    Bat          ";
+	message = StrReplace(message, 5,  messageA);
+	message = StrReplace(message, 12, messageB);
+	TextOut(0, LCD_LINE1, message, false);
+	
+
+	PlayTone(TONE_B7, 5);
+
+	while(true){
+	  ng=SensorRaw(S3)-gn; nw+=ng;  //body angle
+		rp=MotorTachoCount(OUT_B);    //wheel position
+		rg=rp-lrp; lrp=rp; rwi+=rg;   //wheel speed
+     		if (abs(rwi)>15){gn-=sign(rwi); rwi=0;} //Gyro drift comp.
+		// md=(nw+ng*10+rp*4+rg*200)>>4; //pd contr. NXT small wheels
+		md=(nw+ng*10+rp*4+rg*200)>>4;
+		// md=(nw+ng*12+rp*5+rg*360)>>5; //pd contr. RXC large wheels
+		md+=sign(md)*39 ;      //friction compensation   default = 48
+		SetOutput(OUT_AB, Power, md, OutputMode,OUT_MODE_MOTORON,
+		RunState,OUT_RUNSTATE_RUNNING,
+		UpdateFlags,UF_UPDATE_MODE+UF_UPDATE_SPEED);
+		Wait(8);                      //loop about 100 times/sec
+  	}
+}
+//end
+

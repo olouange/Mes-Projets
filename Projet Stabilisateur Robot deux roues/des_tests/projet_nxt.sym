@@ -1,0 +1,511 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	34
+1	__D0main	6	1	4	4	64
+2	__SPTArgsMutex	9	0	8	4	4
+3	__unsigned_stack_001main	5	1	12	4	2
+4	__signed_stack_003main	6	1	16	4	6
+5	__signed_stack_002main	6	1	20	4	16
+6	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	24	4	4
+7	__main_7qG2_timer1_7qG2_000	6	1	28	4	2
+8	__main_shift_tmp	6	1	32	4	4
+9	__main_7qG2_rp_7qG2_000	4	1	36	2	5
+10	__main_7qG2_ng_7qG2_000	4	1	38	2	3
+11	__main_7qG2_gn_7qG2_000	4	1	40	2	8
+12	__main_7qG2_nw_7qG2_000	4	1	42	2	4
+13	__main_7qG2_rg_7qG2_000	4	1	44	2	3
+14	__main_7qG2_Gyro_value_7qG2_000	4	1	46	2	2
+15	__main_7qG2_GyroBiasCount_7qG2_000	4	1	48	2	4
+16	__main_7qG2_md_7qG2_000	4	1	50	2	5
+17	__main_7qG2_GyroBias_7qG2_000	4	1	52	2	3
+18	__main_7qG2_lrp_7qG2_000	4	1	54	2	3
+19	__main_7qG2_rwi_7qG2_000	4	1	56	2	6
+20	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTGyro_inline_main	1	1	58	1	2
+21	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTGyro_inline_main	1	1	59	1	2
+22	__main_sign_tmp	2	1	60	1	8
+23	__main_shift_cnt	2	1	61	1	4
+24	__ResetSensorTmp	1	1	62	1	2
+25	__ResetSensorPort	1	1	63	1	3
+26	__PFTmp	1	1	64	1	1
+27	__constVal2	2	0	65	1	3
+28	____ResetSensorSubroutine_return	1	1	66	1	3
+29	__constVal4	2	0	67	1	1
+30	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTGyro_inline_main	1	1	68	1	2
+31	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTGyro_inline_main	1	1	69	1	2
+32	__SetSensorHTGyro_7qG2_port_7qG2_000_inline_main	1	1	70	1	4
+33	__constVal1	2	0	71	1	3
+34	____initialize_global_data_return	1	1	72	1	3
+35	__TextOutArgs	8	0	4	16	6
+36	__TextOutArgs.Result	2	1	76	1	6
+37	__TextOutArgs.Location	8	0	2	4	6
+38	__TextOutArgs.Location.X	4	1	80	2	6
+39	__TextOutArgs.Location.Y	4	1	82	2	6
+40	__TextOutArgs.Text	7	0	84	4	6
+41	__TextOutArgs.Text.Text_type	1	0	0	1	0
+42	__TextOutArgs.Options	5	1	88	4	6
+43	__SPTArgs	8	0	5	8	12
+44	__SPTArgs.Result	2	1	92	1	12
+45	__SPTArgs.Frequency	3	1	94	2	12
+46	__SPTArgs.Duration	3	1	96	2	12
+47	__SPTArgs.Loop	1	1	98	1	12
+48	__SPTArgs.Volume	1	1	99	1	12
+49	__IOMRArgs	8	0	5	16	4
+50	__IOMRArgs.Result	2	1	100	1	4
+51	__IOMRArgs.ModuleName	7	0	102	4	4
+52	__IOMRArgs.ModuleName.ModuleName_type	1	0	0	1	0
+53	__IOMRArgs.Offset	3	1	104	2	4
+54	__IOMRArgs.Count	3	1	106	2	4
+55	__IOMRArgs.Buffer	7	0	108	4	4
+56	__IOMRArgs.Buffer.Buffer_type	1	0	0	1	0
+57	__strbufmain	7	0	110	4	20
+58	__strbufmain.__strbufmain_type	1	0	0	1	0
+59	__constStr0010	7	0	112	4	1
+60	__constStr0010.__constStr0010_type	1	1	0	1	0
+61	__OUT_AB	7	0	114	4	1
+62	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+63	__strretvalmain	7	0	116	4	8
+64	__strretvalmain.__strretvalmain_type	1	0	0	1	0
+65	__constStr0009	7	0	118	4	1
+66	__constStr0009.__constStr0009_type	1	1	0	1	0
+67	__main_7qG2_messageA_7qG2_000	7	0	120	4	1
+68	__main_7qG2_messageA_7qG2_000.__main_7qG2_messageA_7qG2_000_type	1	0	0	1	0
+69	__main_7qG2_message_7qG2_000	7	0	122	4	6
+70	__main_7qG2_message_7qG2_000.__main_7qG2_message_7qG2_000_type	1	0	0	1	0
+71	__strtmpbufmain	7	0	124	4	4
+72	__strtmpbufmain.__strtmpbufmain_type	1	0	0	1	0
+73	__main_7qG2_messageB_7qG2_000	7	0	126	4	1
+74	__main_7qG2_messageB_7qG2_000.__main_7qG2_messageB_7qG2_000_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	86	0	#line 86 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	87	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	86	2	#line 86 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	86	2	#line 86 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	87	2		set __SetSensorHTGyro_7qG2_port_7qG2_000_inline_main, 2
+0	86	5	#line 86 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	13778	5	#line 13778 "NXCDefs.h"
+0	13779	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTGyro_inline_main, __SetSensorHTGyro_7qG2_port_7qG2_000_inline_main
+0	13778	7	#line 13778 "NXCDefs.h"
+0	13778	7	#line 13778 "NXCDefs.h"
+0	13779	7		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTGyro_inline_main, 6
+0	13778	10	#line 13778 "NXCDefs.h"
+0	4247	10	#line 4247 "NXCDefs.h"
+0	4248	10		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTGyro_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTGyro_inline_main, 0
+0	4247	14	#line 4247 "NXCDefs.h"
+0	13779	14	#line 13779 "NXCDefs.h"
+0	13779	14	#line 13779 "NXCDefs.h"
+0	13780	14		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTGyro_inline_main, __SetSensorHTGyro_7qG2_port_7qG2_000_inline_main
+0	13779	16	#line 13779 "NXCDefs.h"
+0	13779	16	#line 13779 "NXCDefs.h"
+0	13780	16		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTGyro_inline_main, 0
+0	13779	19	#line 13779 "NXCDefs.h"
+0	4260	19	#line 4260 "NXCDefs.h"
+0	4261	19		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTGyro_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTGyro_inline_main, 1
+0	4260	23	#line 4260 "NXCDefs.h"
+0	13780	23	#line 13780 "NXCDefs.h"
+0	13780	23	#line 13780 "NXCDefs.h"
+0	13780	23	#line 13780 "NXCDefs.h"
+0	4278	23	#line 4278 "NXCDefs.h"
+0	4279	23	#pragma macro 4
+0	4279	23		mov __ResetSensorPort, __SetSensorHTGyro_7qG2_port_7qG2_000_inline_main
+0	4279	25		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3926	27	#line 3926 "NXCDefs.h"
+0	4278	27	#line 4278 "NXCDefs.h"
+0	13781	27	#line 13781 "NXCDefs.h"
+0	88	27	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	88	27	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	89	27		set __main_7qG2_gn_7qG2_000, 0
+0	88	30	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	88	30	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	89	30		set __main_7qG2_nw_7qG2_000, 0
+0	88	33	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	88	33	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	89	33		set __main_7qG2_rp_7qG2_000, 0
+0	88	36	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	88	36	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	89	36		set __main_7qG2_lrp_7qG2_000, 0
+0	88	39	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	88	39	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	89	39		set __main_7qG2_rwi_7qG2_000, 0
+0	88	42	#line 88 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	89	42	#line 89 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	90	42		set __main_7qG2_GyroBias_7qG2_000, 0
+0	89	45	#line 89 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	93	45	#line 93 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	94	45		gettick __main_7qG2_timer1_7qG2_000
+0	93	47	#line 93 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	93	47	#line 93 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	93	47	#line 93 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	99	47	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	100	47		set __main_7qG2_GyroBiasCount_7qG2_000, 0
+0	99	50	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	99	50	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	99	50	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	100	50		gettick __unsigned_stack_001main
+0	99	52	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	99	52	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	100	52		set __signed_stack_002main, 3000
+0	99	55	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	99	55	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	99	55	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	100	55		add __D0main, __signed_stack_002main, __main_7qG2_timer1_7qG2_000
+0	99	59	#line 99 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	100	59		cmp 0, __D0main, __unsigned_stack_001main, __D0main
+0	101	63	#line 101 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	102	63		brtst 4, __ASM_Label_508, __D0main
+0	102	66	#line 102 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	103	66		getin __main_7qG2_Gyro_value_7qG2_000, __constVal2, 2
+0	102	70	#line 102 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	102	70	#line 102 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	102	70	#line 102 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	103	70		set __Wait_7qG2_ms_7qG2_000_inline_main, 150
+0	102	73	#line 102 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	8551	73	#line 8551 "NXCDefs.h"
+0	8552	73		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	76	#line 8551 "NXCDefs.h"
+0	103	76	#line 103 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	103	76	#line 103 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	104	76		mov __signed_stack_001main, __main_7qG2_GyroBiasCount_7qG2_000
+0	103	78	#line 103 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	104	78	#line 104 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	78		set __D0main, 1
+0	104	81	#line 104 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	81		add __main_7qG2_GyroBiasCount_7qG2_000, __signed_stack_001main, __D0main
+0	104	85	#line 104 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	104	85	#line 104 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	104	85	#line 104 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	85		mov __signed_stack_001main, __main_7qG2_gn_7qG2_000
+0	104	87	#line 104 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	87	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	106	87		mov __D0main, __main_7qG2_Gyro_value_7qG2_000
+0	105	89	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	106	89		add __main_7qG2_gn_7qG2_000, __signed_stack_001main, __D0main
+0	105	93	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	93	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	93	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	106	93		set __signed_stack_001main, 3951
+0	105	96	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	96	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	106	96		set __signed_stack_002main, 5
+0	105	99	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	99	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	106	99		set __signed_stack_003main, 4
+0	105	102	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	105	102	#line 105 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	106	102		set __D0main, 0
+0	106	105	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	105		acquire __SPTArgsMutex
+0	106	106	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	106		mov __SPTArgs.Frequency, __signed_stack_001main
+0	106	108	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	108		mov __SPTArgs.Duration, __signed_stack_002main
+0	106	110	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	110		mov __SPTArgs.Volume, __signed_stack_003main
+0	106	112	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	112		mov __SPTArgs.Loop, __D0main
+0	106	114	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	114		syscall 10, __SPTArgs
+0	106	117	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	117		mov __D0main, __SPTArgs.Result
+0	106	119	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	119		release __SPTArgsMutex
+0	106	120	#line 106 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	120	#line 107 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	108	120		jmp __ASM_Label_507
+0	107	122	#line 107 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	107	122	#line 107 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	108	122		mov __signed_stack_001main, __main_7qG2_gn_7qG2_000
+0	107	124	#line 107 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	108	124	#line 108 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	109	124		mov __D0main, __main_7qG2_GyroBiasCount_7qG2_000
+0	108	126	#line 108 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	109	126		div __main_7qG2_GyroBias_7qG2_000, __signed_stack_001main, __D0main
+0	108	130	#line 108 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	108	130	#line 108 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	111	130	#line 111 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	112	130		mov __main_7qG2_gn_7qG2_000, __main_7qG2_GyroBias_7qG2_000
+0	111	132	#line 111 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	111	132	#line 111 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	111	132	#line 111 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	112	132	#pragma macro 2
+0	112	132	#pragma macro 9
+0	112	132		mov __IOMRArgs.ModuleName, __constStr0009
+0	112	134		mov __IOMRArgs.Offset, __constVal4
+0	112	136		set __IOMRArgs.Count, 2
+0	112	139		syscall 32, __IOMRArgs
+0	4170	142	#line 4170 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	111	142	#line 111 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	111	142	#line 111 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	111	142	#line 111 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	111	142	#line 111 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	115	142	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	142		strcat __strbufmain, __constStr0010
+0	115	146	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	146		mov __main_7qG2_message_7qG2_000, __strbufmain
+0	115	148	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	115	148	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	148		strcat __strbufmain, __main_7qG2_message_7qG2_000
+0	115	152	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	152		mov __strtmpbufmain, __strbufmain
+0	115	154	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	154		set __signed_stack_001main, 5
+0	115	157	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	115	157	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	157		strcat __strbufmain, __main_7qG2_messageA_7qG2_000
+0	115	161	#line 115 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	161		mov __strretvalmain, __strbufmain
+0	116	163	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	163		strtoarr __strbufmain, __strretvalmain
+0	116	166	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	166		replace __strretvalmain, __strtmpbufmain, __signed_stack_001main, __strbufmain
+0	116	171	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	171		strcat __strbufmain, __strretvalmain
+0	116	175	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	175		mov __main_7qG2_message_7qG2_000, __strbufmain
+0	116	177	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	177	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	177		strcat __strbufmain, __main_7qG2_message_7qG2_000
+0	116	181	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	181		mov __strtmpbufmain, __strbufmain
+0	116	183	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	183		set __signed_stack_001main, 12
+0	116	186	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	116	186	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	186		strcat __strbufmain, __main_7qG2_messageB_7qG2_000
+0	116	190	#line 116 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	190		mov __strretvalmain, __strbufmain
+0	117	192	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	118	192		strtoarr __strbufmain, __strretvalmain
+0	117	195	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	118	195		replace __strretvalmain, __strtmpbufmain, __signed_stack_001main, __strbufmain
+0	117	200	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	118	200		strcat __strbufmain, __strretvalmain
+0	117	204	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	118	204		mov __main_7qG2_message_7qG2_000, __strbufmain
+0	117	206	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	206	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	118	206		set __signed_stack_001main, 0
+0	117	209	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	209	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	118	209		set __signed_stack_002main, 56
+0	117	212	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	117	212	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	118	212		strcat __strbufmain, __main_7qG2_message_7qG2_000
+0	117	216	#line 117 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	118	216		set __D0main, 0
+0	120	219	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	120	219	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	219		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	120	221	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	221		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	120	223	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	223		mov __TextOutArgs.Options, __D0main
+0	120	225	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	225		mov __TextOutArgs.Text, __strbufmain
+0	120	227	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	227		syscall 13, __TextOutArgs
+0	120	230	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	230		mov __D0main, __TextOutArgs.Result
+0	120	232	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	120	232	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	120	232	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	232		set __signed_stack_001main, 3951
+0	120	235	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	120	235	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	235		set __signed_stack_002main, 5
+0	120	238	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	120	238	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	238		set __signed_stack_003main, 4
+0	120	241	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	120	241	#line 120 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	121	241		set __D0main, 0
+0	122	244	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	244		acquire __SPTArgsMutex
+0	122	245	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	245		mov __SPTArgs.Frequency, __signed_stack_001main
+0	122	247	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	247		mov __SPTArgs.Duration, __signed_stack_002main
+0	122	249	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	249		mov __SPTArgs.Volume, __signed_stack_003main
+0	122	251	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	251		mov __SPTArgs.Loop, __D0main
+0	122	253	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	253		syscall 10, __SPTArgs
+0	122	256	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	256		mov __D0main, __SPTArgs.Result
+0	122	258	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	258		release __SPTArgsMutex
+0	122	259	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	122	259	#line 122 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	259		set __D0main, 1
+0	123	262	#line 123 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	124	262		tst 5, __D0main, __D0main
+0	123	265	#line 123 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	124	265		brtst 4, __ASM_Label_554, __D0main
+0	123	268	#line 123 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	124	268		getin __signed_stack_001main, __constVal2, 2
+0	123	272	#line 123 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	272	#line 123 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	124	272		mov __D0main, __main_7qG2_gn_7qG2_000
+0	123	274	#line 123 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	124	274		sub __main_7qG2_ng_7qG2_000, __signed_stack_001main, __D0main
+0	123	278	#line 123 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	123	278	#line 123 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	124	278	#line 124 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	278		mov __D0main, __main_7qG2_ng_7qG2_000
+0	124	280	#line 124 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	280		add __main_7qG2_nw_7qG2_000, __main_7qG2_nw_7qG2_000, __D0main
+0	124	284	#line 124 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	284	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	284		getout __main_7qG2_rp_7qG2_000, __constVal1, 4
+0	125	288	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	288	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	288	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	288		mov __signed_stack_001main, __main_7qG2_rp_7qG2_000
+0	125	290	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	290	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	290		mov __D0main, __main_7qG2_lrp_7qG2_000
+0	125	292	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	292		sub __main_7qG2_rg_7qG2_000, __signed_stack_001main, __D0main
+0	125	296	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	296	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	296	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	296		mov __main_7qG2_lrp_7qG2_000, __main_7qG2_rp_7qG2_000
+0	125	298	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	125	298	#line 125 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	298	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	298		mov __D0main, __main_7qG2_rg_7qG2_000
+0	126	300	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	300		add __main_7qG2_rwi_7qG2_000, __main_7qG2_rwi_7qG2_000, __D0main
+0	126	304	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	304	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	304		mov __D0main, __main_7qG2_rwi_7qG2_000
+0	126	306	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	306		abs __signed_stack_001main, __D0main
+0	126	309	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	309	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	309		set __D0main, 15
+0	126	312	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	312		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	126	316	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	316		brtst 4, __ASM_Label_573, __D0main
+0	126	319	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	319		mov __D0main, __main_7qG2_rwi_7qG2_000
+0	126	321	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	321		set __main_sign_tmp, 0
+0	127	324		brtst EQ, __sign_7, __D0main
+0	127	327		set __main_sign_tmp, -1
+0	127	330		brtst LT, __sign_7, __D0main
+0	127	333		set __main_sign_tmp, 1
+0	127	336	__sign_7:	mov __D0main, __main_sign_tmp
+0	126	338	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	338		sub __main_7qG2_gn_7qG2_000, __main_7qG2_gn_7qG2_000, __D0main
+0	126	342	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	342	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	127	342		set __main_7qG2_rwi_7qG2_000, 0
+0	126	345	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	126	345	#line 126 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	128	345	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	128	345	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	345		mov __signed_stack_001main, __main_7qG2_nw_7qG2_000
+0	128	347	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	128	347	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	347		mov __signed_stack_002main, __main_7qG2_ng_7qG2_000
+0	128	349	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	128	349	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	349		set __D0main, 10
+0	128	352	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	352		mul __D0main, __signed_stack_002main, __D0main
+0	128	356	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	356		add __signed_stack_001main, __signed_stack_001main, __D0main
+0	128	360	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	128	360	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	360		mov __signed_stack_002main, __main_7qG2_rp_7qG2_000
+0	128	362	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	128	362	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	362		set __D0main, 4
+0	128	365	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	365		mul __D0main, __signed_stack_002main, __D0main
+0	128	369	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	369		add __signed_stack_001main, __signed_stack_001main, __D0main
+0	128	373	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	128	373	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	373		mov __signed_stack_002main, __main_7qG2_rg_7qG2_000
+0	128	375	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	128	375	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	375		set __D0main, 200
+0	128	378	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	378		mul __D0main, __signed_stack_002main, __D0main
+0	128	382	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	129	382		add __signed_stack_001main, __signed_stack_001main, __D0main
+0	128	386	#line 128 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	130	386	#line 130 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	131	386		set __main_shift_cnt, 4
+0	130	389	#line 130 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	131	389		mov __main_shift_tmp, __signed_stack_001main
+0	131	391	__shiftstart_1:	brtst LTEQ, __shiftdone_1, __main_shift_cnt
+0	131	394		div __main_shift_tmp, __main_shift_tmp, __constVal2
+0	131	398		sub __main_shift_cnt, __main_shift_cnt, __constVal1
+0	131	402		jmp __shiftstart_1
+0	131	404		mov __main_7qG2_md_7qG2_000, __main_shift_tmp
+0	130	406	#line 130 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	130	406	#line 130 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	130	406	#line 130 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	131	406		mov __D0main, __main_7qG2_md_7qG2_000
+0	130	408	#line 130 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	131	408		set __main_sign_tmp, 0
+0	131	411		brtst EQ, __sign_8, __D0main
+0	131	414		set __main_sign_tmp, -1
+0	131	417		brtst LT, __sign_8, __D0main
+0	131	420		set __main_sign_tmp, 1
+0	131	423	__sign_8:	mov __signed_stack_001main, __main_sign_tmp
+0	130	425	#line 130 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	131	425	#line 131 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	132	425		set __D0main, 39
+0	131	428	#line 131 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	132	428		mul __D0main, __signed_stack_001main, __D0main
+0	131	432	#line 131 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	132	432		add __main_7qG2_md_7qG2_000, __main_7qG2_md_7qG2_000, __D0main
+0	131	436	#line 131 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	131	436	#line 131 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	132	436		mov __signed_stack_001main, __main_7qG2_md_7qG2_000
+0	131	438	#line 131 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	132	438	#line 132 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	133	438		set __signed_stack_002main, 1
+0	132	441	#line 132 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	133	441	#line 133 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	441		set __signed_stack_003main, 32
+0	133	444	#line 133 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	133	444	#line 133 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	444		set __D0main, 3
+0	134	447	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	447	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	447	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	447	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	447	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	447	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	135	447		setout __OUT_AB, 2, __signed_stack_001main, 1, __signed_stack_002main, 6, __signed_stack_003main, 0, __D0main
+0	134	458	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	458	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	134	458	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	135	458		set __Wait_7qG2_ms_7qG2_000_inline_main, 8
+0	134	461	#line 134 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	8551	461	#line 8551 "NXCDefs.h"
+0	8552	461		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	464	#line 8551 "NXCDefs.h"
+0	135	464	#line 135 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	139	464	#line 139 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	140	464		jmp __ASM_Label_553
+0	139	466	#line 139 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+0	140	466		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	140	0	#line 140 "C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc"
+2	141	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc
+1	__ResetSensorSubroutine	469	NXTDefs.h
+2	__initialize_global_data	482	C:\Users\Etudiant\Desktop\PROJET\projet_nxt.nxc
